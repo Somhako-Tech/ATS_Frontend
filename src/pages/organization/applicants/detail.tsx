@@ -244,6 +244,7 @@ export default function ApplicantsDetail({ atsVersion, userRole, upcomingSoon }:
 	}
 
 	async function loadAIInterviewQuestion() {
+		console.log("123")
 		if (!["standard", "starter"].includes(atsVersion)) {
 			setailoader(true);
 
@@ -2194,8 +2195,8 @@ export default function ApplicantsDetail({ atsVersion, userRole, upcomingSoon }:
 																		<Button2
 																			btnType="button"
 																			// className="flex items-center justify-center rounded border border-slate-300 px-3 py-2 text-sm hover:bg-primary hover:text-white"
-																			disabled={ailoader}
-																			onClick={() => {
+																			// disabled={ailoader}
+																			handleClick={() => {
 																				setaiquestion([]);
 																				setaires("");
 																				loadAIInterviewQuestion();
