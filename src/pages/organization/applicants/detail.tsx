@@ -259,6 +259,10 @@ export default function ApplicantsDetail({ atsVersion, userRole, upcomingSoon }:
 					setailoader(false);
 				});
 		}
+		else{
+			console.log("no question gen");
+			
+		}
 	}
 
 	async function genAIFeedback() {
